@@ -1,9 +1,7 @@
-module.exports.app = {
-    dbDomain: '127.0.0.1',
-    port: '27017',
-    dbName: 'recipeApp',
-    username: '',
-    password: ''
-  };
+require('dotenv').config();
 
-  
+module.exports = {
+  port: process.env.PORT || 4000,
+  mongoURI: process.env.MONGODB_URI,
+  jwtSecret: process.env.JWT_SECRET || 'your_jwt_secret_fallback'
+};

@@ -1,7 +1,13 @@
-const mongoose = require('mongoose');
-const app = require('../config').app;
-module.exports.connection = () => {
-  return mongoose.connect(
-    `mongodb://${app.dbDomain}:${app.port}/${app.dbName}`
+const jwt = require('jsonwebtoken');
+const config = require('../config');
+
+// Generate JWT token
+exports.generateToken = (userId) => {
+  return jwt.sign(
+    { id: userId },
+    config.jwtSecret,
+    { expiresIn: '24h' }
   );
 };
+
+// Additional helper functions can be added here
