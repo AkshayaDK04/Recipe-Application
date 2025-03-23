@@ -1,0 +1,106 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #ff7f50, #ff5722);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo a:hover {
+  color: #fff5e1;
+  transition: 0.3s ease-in-out;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff5e1;
+}
+
+/* Auth & Profile Section */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-buttons a {
+  background: white;
+  color: #ff5722;
+  padding: 8px 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-buttons a:hover {
+  background: #fff5e1;
+  color: #ff3d00;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: white;
+  color: #ff5722;
+}
+
+.logout-btn:hover {
+  background: #ff3d00;
+  color: white;
+}
+
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+  }
+}

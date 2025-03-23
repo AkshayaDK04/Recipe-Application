@@ -1,0 +1,73 @@
+/* About Page Styles */
+.about-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 50px 20px;
+  }
+  
+  /* Header Section */
+  .about-header {
+    background-color: #ff7f50;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+  
+  /* About Content */
+  .about-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .about-text {
+    background: #f8f8f8;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .about-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-text ul li {
+    font-size: 1rem;
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .about-text ul li::before {
+    content: '✔';
+    color: #4caf50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
